@@ -1,6 +1,6 @@
 # set-collecton - Set collection type for JavaScript
 
-[To be a standard in ECMAScript6](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets)
+Implemented according to [upcoming ECMAScript6 standard](http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets), plus few non standard extensions
 
 ```javascript
 var Set = require('set-collection');
