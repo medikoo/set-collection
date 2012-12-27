@@ -5,12 +5,8 @@ module.exports = function (t, a) {
 
 	a.deep(set.values, [], "Values: Empty");
 	a(set.count, 0, "Count: Empty");
-	a(set.isCopy([]), true, "isCopy: Empty");
-	a(set.isCopy(t()), true, "isCopy: Empty set");
 	a(set.has('raz'), false, "Has: false");
 	set.add('raz');
-	a(set.isCopy([]), false, "isCopy: Add: Empty");
-	a(set.isCopy(['raz']), true, "isCopy: Add: Value");
 	a.deep(set.values, ['raz'], "Values: Add");
 	a(set.count, 1, "Count: Add");
 	a(set.has('raz'), true, "Has: true");

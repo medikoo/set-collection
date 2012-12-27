@@ -3,8 +3,14 @@
 var SetCollection = require('../../');
 
 module.exports = function (t, a) {
-	var set = new SetCollection('raz', 'dwa');
+	var set = new SetCollection();
 
+	a(set.isCopy([]), true, "isCopy: Empty");
+	a(set.isCopy(new SetCollection()), true, "isCopy: Empty set");
+	set.add('raz');
+	a(set.isCopy([]), false, "isCopy: Add: Empty");
+	a(set.isCopy(['raz']), true, "isCopy: Add: Value");
+	set.add('dwa');
 	a(t.call(set, ['raz', 'dwa']), true, "isCopy: Add #2: Value");
 	a(t.call(set, ['dwa', 'raz']), true, "isCopy: Add #2: Order");
 	a(t.call(set, ['dwa', 'raz', 'foo']), false, "isCopy: Add #2: Greater");
