@@ -1,7 +1,7 @@
 {
   "name": "set-collection",
   "version": "0.1.0",
-  "author": "Mariusz Nowak <medikoo+time-uuid@medikoo.com> (http://www.medikoo.com/)",
+  "author": "Mariusz Nowak <medikoo+set-collection@medikoo.com> (http://www.medikoo.com/)",
   "description": "Set collection type",
   "main": "lib",
   "scripts": {
