@@ -14,7 +14,7 @@
     "harmony"
   ],
   "dependencies": {
-    "es5-ext": "git://github.com/medikoo/es5-ext",
+    "es5-ext": "git://github.com/medikoo/es5-ext.git",
     "event-emitter": "~0.2.1"
   },
   "devDependencies": {
